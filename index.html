@@ -7,104 +7,122 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>Material Design for Bootstrap</title>
   <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/logo_futurismo_favicon.ico" type="image/x-icon" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Navbar -->
-  <!--Main Navigation-->
-  <header class="mb-4">
-    <!-- Jumbotron -->
-    <div class="p-3 text-center bg-blue border-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
-            <a href="#!" class="ms-md-2">
-              <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="35" />
-            </a>
-          </div>
+  <nav class="navbar navbar-expand-md navbar-light bg-blue">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#"><img src="img/logo_futurismo.png" height="35px" alt="Logo"></a>
 
-          <div class="col-md-6">
-            <ul>
-              <li class="nav-item px-2 d-none d-md-inline-block">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item px-2 d-none d-md-inline-block">
-                <a class="nav-link" href="#">Destinos</a>
-              </li>
-              <li class="nav-item px-2 d-none d-md-inline-block">
-                <a class="nav-link" href="#">Ofertas</a>
-              </li>
-              <li class="nav-item px-2 d-none d-md-inline-block">
-                <a class="nav-link" href="#">Nosotros</a>
-              </li>
-            </ul>
-          </div>
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredExample"
+        aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+      </button>
 
-          <div class="col-md-3 d-flex justify-content-center justify-content-md-end align-items-center">
-            <div class="d-flex">
-              <!-- User -->
-              <!-- Example split primary button -->
-              <div class="btn-group">
-                <button type="button" class="btn btn-primary btn-sm">Crear cuenta</button>
-                <button type="button" class="btn btn-primary btn-sm dropdown-toggle dropdown-toggle-split"
-                  data-mdb-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-primary btn-sm">Iniciar
-                        sesión</button></a></li>
-                  <hr class="dropdown-divider" />
-                  </li>
-                  <small class="d-flex justify-content-center">¿Eres nuevo
-                    usuario?</small>
-                  <li><a class="dropdown-item" href="#"><button type="button"
-                        class="btn bg-button-purple text-white btn-sm">Crear
-                        cuenta</button></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+        <!-- Left links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bolder">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Destinos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Nosotros</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+
+        <!-- Right links -->
+        <div class="btn-group navbar-nav ms-auto mb-2 mb-lg-0">
+          <button type="button" class="btn bg-button-purple btn-sm btn-hover">Crear cuenta</button>
+          <button type="button" class="btn bg-button-purple btn-sm btn-hover dropdown-toggle dropdown-toggle-split"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><button type="button"
+                  class="btn bg-button-purple btn-sm btn-hover">Iniciar
+                  sesión</button></a></li>
+            <hr class="dropdown-divider" />
+            </li>
+            <small class="d-flex justify-content-center">¿Eres nuevo
+              usuario?</small>
+            <li><a class="dropdown-item" href="#"><button type="button"
+                  class="btn bg-button-purple btn-sm btn-hover">Crear
+                  cuenta</button></a></li>
+          </ul>
         </div>
+        <!-- Right links -->
       </div>
+      <!-- Collapsible wrapper -->
     </div>
-    <!-- Jumbotron -->
-
-
-
-
-
-  </header>
-  <!--Main Navigation-->
+    <!-- Container wrapper -->
+  </nav>
 </head>
 
 <body>
   <!-- Start your project here-->
+  <div>
+    <img src="img/chica-anime-azul_xtrafondos.com.jpg" class="img-fluid" alt="chica_anime_azul">
+  </div>
 
 
 
 
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
 
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-facebook btn-floating btn-fb-hover m-1" href="#!" role="button"><i
+            class="fab fa-facebook-f"></i></a>
 
+        <!-- Instagram -->
+        <a class="btn btn-instagram btn-floating btn-ins-hover m-1" href="#!" role="button"><i
+            class="fab fa-instagram"></i></a>
 
+        <!-- Twitter -->
+        <a class="btn btn-twitter btn-floating m-1 btn-tw-hover" href="#!" role="button"><i
+            class="fab fa-twitter"></i></a>
 
+        <!-- Github -->
+        <a class="btn btn-github btn-floating m-1 btn-git-hover" href="#!" role="button"><i
+            class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
 
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
 
-
-
-
-
-
-
-
-
-
+  </footer>
+  <!-- Footer -->
 
 
 
