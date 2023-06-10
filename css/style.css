@@ -1,26 +1,78 @@
-#into-jumbotron {
-    background: #159957;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom,
-            #283041,
-            #0f1420);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom,
-            #283041,
-            #0f1420);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-@media (max-width: 991.98px) {
-    #into-jumbotron .border-right {
-        border: none !important;
-    }
-}
-
+/* Navbar */
 .bg-blue {
     background-color: #04D9D9;
 }
 
 .bg-button-purple {
     background-color: #7B1FA2;
+    color: #ffffff;
 }
+
+.btn-hover:hover {
+    background-color: #ffffff;
+    color: #7B1FA2;
+    outline: 1px solid #7B1FA2;
+}
+
+
+#navcol-1 {
+    font-size: 18px;
+}
+
+@media (max-width: 576px) {
+    .navbar-dark .navbar-nav .nav-link {
+        float: right;
+    }
+}
+
+/* Navbar */
+
+/* Social Media Buttons */
+
+.btn-facebook {
+    background-color: #3b5998;
+    color: #ffffff;
+}
+
+.btn-fb-hover:hover {
+    background-color: #ffffff;
+    color: #3b5998;
+    outline: 1px solid #3b5998;
+}
+
+.btn-instagram {
+    background-color: #ac2bac;
+    color: #ffffff;
+}
+
+.btn-ins-hover:hover {
+    background-color: #ffffff;
+    color: #ac2bac;
+    outline: 1px solid #ac2bac;
+}
+
+.btn-twitter {
+    background-color: #55acee;
+    color: #ffffff;
+}
+
+.btn-tw-hover:hover {
+    background-color: #ffffff;
+    color: #55acee;
+    outline: 1px solid #55acee;
+}
+
+.btn-github {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.btn-git-hover:hover {
+    background-color: #ffffff;
+    color: #333333;
+    outline: 1px solid #333333;
+}
+
+
+
+/* Social Media Buttons */
