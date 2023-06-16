@@ -1,0 +1,47 @@
+/*body*/
+h2 {
+  color: #4E0FA6;
+  padding: 20px 0px;
+  }
+.titulo{
+  color: #4E0FA6;
+  padding: 20px 0px;
+  font-size: 25px;
+}
+.cont {
+  padding: 50px;
+}
+.cont2 {
+  padding-top: 0px;
+  }
+.vision {
+  padding: 0px;
+  text-align: justify;
+  }
+.mision{
+  padding: 0px;
+  text-align: justify;
+  }
+.vector_mision{
+    background-image: url(../img/vector_mision.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+  }
+.vector_vision{
+    background-image: url(../img/vector_vision.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+  }
+.justificar {
+  justify-content: center;
+}
+.titulo_vision_mision{
+  text-align: center;
+}
+.sombra{
+  text-shadow: 2px 2px 3px rgb(115, 115, 238);
+
+
+}
