@@ -1,142 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Futurismo</title>
-  <!-- MDB icon -->
-  <link rel="icon" href="img/logo_futurismo_favicon.ico" type="image/x-icon" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- MDB -->
-  <link rel="stylesheet" href="css/mdb.min.css" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- CSS Nosotros -->
-  <link rel="stylesheet" href="css/nosotros.css">
-  
-  
-
-  <nav class="navbar navbar-expand-md navbar-light bg-blue">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#"><img src="img/logo_futurismo.png" height="35px" alt="Logo"></a>
-
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredExample"
-        aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars text-white"></i>
-      </button>
-
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
-        <!-- Left links -->
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bolder">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Destinos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Ofertas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="Nosotros.html">Nosotros</a>
-          </li>
-        </ul>
-        <!-- Left links -->
-
-        <!-- Right links -->
-        <div class="btn-group navbar-nav ms-auto mb-2 mb-lg-0">
-          <button type="button" class="btn bg-button-purple btn-sm btn-hover">Crear cuenta</button>
-          <button type="button" class="btn bg-button-purple btn-sm btn-hover dropdown-toggle dropdown-toggle-split"
-            data-mdb-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropdown</span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"><button type="button"
-                  class="btn bg-button-purple btn-sm btn-hover">Iniciar
-                  sesión</button></a></li>
-            <hr class="dropdown-divider" />
-            </li>
-            <small class="d-flex justify-content-center">¿Eres nuevo
-              usuario?</small>
-            <li><a class="dropdown-item" href="#"><button type="button"
-                  class="btn bg-button-purple btn-sm btn-hover">Crear
-                  cuenta</button></a></li>
-          </ul>
-        </div>
-        <!-- Right links -->
-      </div>
-      <!-- Collapsible wrapper -->
-    </div>
-    <!-- Container wrapper -->
-  </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/logo_futurismo_favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
-  <!-- Start your project here-->
-  <img src="img/chica-anime-azul_xtrafondos.com.jpg" alt="an">
-  
 
+    <div class="contenedor">
+        <!--Navbar-->
+        <header>
+            <div class="logo">
+                <img src="img/logo_blanco.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="destinos.html">Destino</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+            <div class="boton">
+                <a class="shadow__btn" href="login.html" target="_blank">
+                    Login/Registro
+                </a>
+            </div>
 
+        </header>
+        <div class="busqueda">
+            <div>
+                <h2>Elije tu Destino</h2>
+            </div>
+            <form class="search-box">
+                <input type="text" placeholder="Buscar">
+                <button type="submit"><img src="img/lupa.png" alt=""></button>
+                <div class="slider">
+                    <div><img src="img/hotel.png" alt=""></div>
+                    <div><img src="img/camara.png" alt=""></div>
+                    <div><img src="img/playa.png" alt=""></div>
+                    <div><img src="img/Avion.png" alt=""></div>
+                    <div><img src="img/hotel.png" alt=""></div>
+                </div>
+            </form>
+        </div>
+        <div class="carrusel">
+            <div id="slide">
+                <div class="item" style="background-image: url(img/machupicchu.jpg);">
+                    <div class="content">
+                        <div class="nombre">MACHUPICCHU</div>
+                        <div class="descripcion">Machu Picchu es el sitio arqueológico inca más sobresaliente debido a
+                            su creativo diseño urbano, la belleza de su arquitectura y el fino trabajo en piedra de sus
+                            construcciones.</div>
+                        <button>Ver más</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(img/montaña7colores.jpg);">
+                    <div class="content">
+                        <div class="nombre">MONTAÑA DE 7 COLORES</div>
+                        <div class="descripcion">A unos 100 kilómetros al sureste de Cusco, Perú, existe un arcoíris
+                            hecho montaña. Se trata de la montaña de los Siete Colores, también conocida como Vinicunca
+                            o Arcoíris</div>
+                        <button>Ver más</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(img/brasil.jpg);">
+                    <div class="content">
+                        <div class="nombre">BRASIL</div>
+                        <div class="descripcion">Tierra de belleza arrolladora, de alegría, colores, de ganas de música,
+                            fiesta y bailoteo. País de contrastes, de junglas de acero y selvas inexploradas, de favelas
+                            y rascacielos, de olas salvajes y cascos históricos donde pasear es puro placer,</div>
+                        <button>Ver más</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(img/cancun.jpg);">
+                    <div class="content">
+                        <div class="nombre">CANCÚN</div>
+                        <div class="descripcion">Con sus playas de fina arena blanca, aguas azul turquesa y
+                            espectaculares arrecifes de coral que yacen frente a sus costas, no es ninguna sorpresa que
+                            Cancún sea uno de los destinos turísticos más populares de México.</div>
+                        <button>Ver más</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(img/Iquitos.jpg);">
+                    <div class="content">
+                        <div class="nombre">IQUITOS</div>
+                        <div class="descripcion">La mejor época para viajar a Iquitos es desde abril hasta octubre,
+                            cuando las condiciones climáticas son un poco más estables y las probabilidades de lluvia
+                            disminuyen.</div>
+                        <button>Ver más</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(img/huacachina.jpg);">
+                    <div class="content">
+                        <div class="nombre">HUACACHINA</div>
+                        <div class="descripcion">El Oasis de Huacachina está ubicado a 5 km al oeste de la ciudad de
+                            Ica, a unas 4 horas al sur de Lima. El también llamado Oasis de las Américas es un lugar que
+                            no os podéis perder por nada del mundo, pues la diversión y el deporte de aventura está
+                            asegurado.</div>
+                        <button>Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+        <div class="buscado">
+            <div>
+                <h2>Lo más Buscado</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Arequipa.jpg" alt="">
+                        <h3>Arequipa</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Arequipa</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio rem eaque quis sequi. Id
+                            veritatis perferendis at iste animi explicabo molestiae mollitia delectus rerum?</p>
+                        <div class="link">
+                            <a href="#">Detalles</a>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/buenosaires.jpg" alt="">
+                        <h3>Buenos Aires</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Buenos Aires</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio rem eaque quis sequi. Id
+                            veritatis perferendis at iste animi explicabo molestiae mollitia delectus rerum?</p>
+                        <div class="link">
+                            <a href="#">Detalles</a>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/colombia.jpg" alt="">
+                        <h3>colombia</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Colombia</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio rem eaque quis sequi. Id
+                            veritatis perferendis at iste animi explicabo molestiae mollitia delectus rerum?</p>
+                        <div class="link">
+                            <a href="#">Detalles</a>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-empresas">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="img/empresas/Avianca.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/Latam.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/movilbus.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/Oltursa.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/Peruvian.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/Sky.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/Star Peru.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/Avianca.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/Latam.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/movilbus.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/Oltursa.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/Peruvian.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/Sky.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/empresas/Star Peru.png" alt="">
+                </div>
+            </div>
+        </div>
+        <footer>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4">
+            <div class="container__footer">
+                <div class="box__footer">
+                    <div class="logo">
+                        <img src="img/logo_morado.png" alt="">
+                    </div>
+                    <div class="terms">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit
+                            libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia
+                            praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
+                    </div>
+                </div>
+                <div class="box__footer">
+                    <h2>Futurismo</h2>
+                    <a href="#">Inicio</a>
+                    <a href="#">Destinos</a>
+                    <a href="#">Ofertas</a>
+                    <a href="#">Nosotros</a>
+                </div>
 
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-facebook btn-floating btn-fb-hover m-1" href="#!" role="button"><i
-            class="fab fa-facebook-f"></i></a>
+                <div class="box__footer">
+                    <h2>Redes Sociales</h2>
+                    <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                    <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
 
-        <!-- Instagram -->
-        <a class="btn btn-instagram btn-floating btn-ins-hover m-1" href="#!" role="button"><i
-            class="fab fa-instagram"></i></a>
+            </div>
 
-        <!-- Twitter -->
-        <a class="btn btn-twitter btn-floating m-1 btn-tw-hover" href="#!" role="button"><i
-            class="fab fa-twitter"></i></a>
-
-        <!-- Github -->
-        <a class="btn btn-github btn-floating m-1 btn-git-hover" href="#!" role="button"><i
-            class="fab fa-github"></i></a>
-      </section>
-      <!-- Section: Social media -->
+            <div class="box__copyright">
+                <hr>
+                <p>Todos los derechos reservados © 2023 <b>Futurismo.com</b></p>
+            </div>
+        </footer>
     </div>
-    <!-- Grid container -->
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2023 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
-
-
-
-  <!-- End your project here-->
-
-  <!-- MDB -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Custom scripts -->
-  <script type="text/javascript"></script>
+    <script src="script-carrusel.js"></script>
 </body>
 
 </html>

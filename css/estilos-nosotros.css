@@ -1,0 +1,269 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: 300;
+}
+
+.contenedor {
+    width: 100%;
+    
+}
+
+/*Estilos del Header - en que se encuentra el nav*/
+header{
+    padding: 1em;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background: #4E0FA6;
+    box-shadow: 0px 2px 30px;
+    position: fixed;
+    
+} 
+.logo{
+    width: 15%;
+    /* border: 2px solid; */
+}
+.logo img{
+    width: 100%;
+    /* border: 2px solid; */
+
+}
+header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid; */
+    justify-content: center;
+    align-content: center;
+}
+header nav ul{
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+   /*  width: 100%; */
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li{
+    float: right;
+    display: inline;
+    margin-right: 10px;
+}
+header nav ul li a {
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    color:#ffffff;
+    
+}
+header nav ul li a:hover{
+    color: #04D9D9;
+    
+}
+
+/*Estilos del boton de login y registro*/
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 15%;
+}
+
+.boton p {
+    font-weight: 900;
+    height: 22px;
+    line-height: 22px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.shadow__btn {
+    display: felx;
+    width: 150px;
+    height: 50px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 15px 15px;
+    background-color: #04D9D9;
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+.shadow__btn {
+    background: #04D9D9;
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+  
+.shadow__btn:hover {
+    box-shadow: 0 0 5px #04D9D9,
+                0 0 25px #04D9D9,
+                0 0 50px #04D9D9,
+                0 0 100px #04D9D9;
+}
+
+
+/* MENU PRINCIPAL */
+
+.secciones{
+    /* border: 4px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    /* background-image: linear-gradient(to left,#4E0FA6 ,#04D9D9,#4E0FA6); */
+    background-repeat: no-repeat;
+    
+    
+}
+
+.contenedor-secciones {
+    /* border: 4px solid yellow; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.articulo1 {
+    /* border: 4px solid blue; */
+    flex-grow: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 20px;
+    border-radius: 0.5em;
+}
+
+.articulo1 h1 {
+    text-align: center;
+}
+.articulo1 p {
+    text-align: justify;
+}
+
+
+.articulo2-3 {
+    /* border: 4px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.articulo2-3 p {
+    text-align: justify;
+}
+
+.articulo2, .articulo3 {
+    /* border: 4px solid; */
+    flex-basis: 49%;
+    background-color: #f2f2f2;
+    padding: 1em;
+    box-shadow: 5px 5px 20px;
+    border-radius: 0.5em;
+}
+
+.contenido-articulo h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contenido-articulo p {
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+/*Estilos del footer*/
+
+footer{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #f2f2f2; 
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #4E0FA6;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #4E0FA6;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #04D9D9;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #4E0FA6;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #4E0FA6;
+}

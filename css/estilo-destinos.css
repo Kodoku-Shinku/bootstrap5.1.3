@@ -1,0 +1,95 @@
+body {
+    font-family: 'Sulphur Point', sans-serif;
+    background-color: #e0f2f1;
+  }
+  
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+  
+.form-container {
+    background-color: #04D9D9;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+  
+  
+
+  
+
+h2 {
+    color: #4E0FA6;
+    margin-bottom: 30px;
+}
+  
+label {
+    font-weight: bold;
+    color: #4E0FA6;
+}
+  
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+  
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+  
+.search-btn {
+  margin-top: 20px;
+  background-color: #4E0FA6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+  
+.promo-text-AQP {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff4081; 
+  text-align: center;
+  margin: 20px 0;
+  }
+
+.promo-text-BS {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff4081; 
+  text-align: center;
+  margin: 20px 0;
+  }
+
+.promo-text-COL {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff4081; 
+  text-align: center;
+  margin: 20px 0;
+  }
+
+.promo-text-CAN {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff4081; 
+  text-align: center;
+  margin: 20px 0;
+}
+
+.promo-text-CUS {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff4081; 
+  text-align: center;
+  margin: 20px 0;
+}
