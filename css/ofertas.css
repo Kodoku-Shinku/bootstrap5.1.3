@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Sulphur Point', sans-serif;
+    background-color: #f6f0f0;
+    width: 100%;
+    padding: 0;
+}
+/*Navbar*/
+header{
+    padding: 1em;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background: #4E0FA6;
+}
+.logo{
+    width: 70%;
+}
+.logo img{
+    width: 50%;
+
+}
+header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li{
+    float: right;
+    display: inline;
+    margin-right: 10px;
+}
+header nav ul li a {
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    color:#ffffff;
+    
+}
+header nav ul li a:hover{
+    color: #04D9D9;
+    
+}
+/*Navbar*/
+/*Estilos del boton de login y registro*/
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.shadow__btn {
+    display: felx;
+    width: 150px;
+    height: 50px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 15px 15px;
+    background-color: #04D9D9;
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+.shadow__btn {
+    background: #04D9D9;
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+  
+.shadow__btn:hover {
+    box-shadow: 0 0 5px #04D9D9,
+                0 0 25px #04D9D9,
+                0 0 50px #04D9D9,
+                0 0 100px #04D9D9;
+}
+
+/*Paquetes Insuperables*/
+.ofertas {
+    width: 100%;
+    height: auto;
+    background-color: #F3E304;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Cards*/
+.place {
+    font-size: 18px;
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight:700;
+}
+.date {
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: 400;
+    margin-bottom: 11px;
+    text-align: left;
+}
+.star-filled {
+    color:#4E0FA6;
+}
+.price {
+    background: #4E0FA6;
+    color: #F3E304;
+    border-radius: 5px;
+    width: 120px;
+}
+.cost {
+    color: #4E0FA6;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 2em;
+
+}
+.extra{
+    background-color: #f8f3f3;
+    padding: 5px;
+}
+img{
+    position: relative;
+}
+.card img{
+    height: 162px;
+}
+
+.image img:hover{
+    animation: pulse 0.5s;
+}
+.caption {
+    position: absolute;
+    top: 130px;
+    padding: 2px;
+    background: #4E0FA6;
+    color: #F3E304;
+    left:5px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+
+
+/*Estilos del footer*/
+footer{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #04D9D9;
+    background-image: url('/img/background-footer.svg');
+    background-size: cover;
+    
+    background-color: #4E0FA6;
+    -webkit-mask-image: url("/img/background-footer.svg");
+    mask-image: url("/img/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #4E0FA6;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #4E0FA6;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #04D9D9;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #4E0FA6;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #4E0FA6;
+}
+/*Estilos del footer*/

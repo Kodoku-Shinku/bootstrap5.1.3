@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Sulphur Point', sans-serif;
+    background-color: #f6f0f0;
+    width: 100%;
+    padding: 0;
+}
+/*Paquetes Insuperables*/
+.ofertas {
+    width: 100%;
+    height: auto;
+    background-color: #F3E304;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+}
+
+
+/*Cards*/
+.place {
+    font-size: 18px;
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight:700;
+}
+.date {
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: 400;
+    margin-bottom: 11px;
+    text-align: left;
+}
+.star-filled {
+    color:#4E0FA6;
+}
+.price {
+    background: #4E0FA6;
+    color: #F3E304;
+    border-radius: 5px;
+    width: 100px;
+}
+.cost {
+    color: #4E0FA6;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: left;
+}
+.extra{
+    background-color: #f8f3f3;
+    padding: 5px;
+}
+img{
+    position: relative;
+}
+.image img:hover{
+    animation: pulse 0.5s;
+}
+.caption {
+    position: absolute;
+    top: 120;
+    padding: 2px;
+    background: #4E0FA6;
+    color: #F3E304;
+    left:15px;
+    z-index: 1;
+    border-radius: 5px;
+}
+.caption2 {
+    position: absolute;
+    top: 120;
+    padding: 2px;
+    color: #FFFFFF;
+    left:160px;
+    z-index: 1;
+    margin: 0;
+    text-align: center;
+    line-height: 0.8;
+}
+
+
+ 
+ 

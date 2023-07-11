@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de vuelos</title>
+  <link rel="stylesheet" href="css/estilo-destinos.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/logo_futurismo_favicon.ico" type="image/x-icon" />
+ 
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="Logo blanco.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="ofertas.html">Nosotros</a></li>
+                </ul>
+            </nav>
+            <div class="boton">
+                <a class="shadow__btn" href="login.html" target="_blank"> 
+                    Login/Registro
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+    <div class="form-container">
+        <h2>¿A dónde viajarás hoy?</h2>
+         <form>
+            <div class="form-group">
+            <label for="fecha-ida">Fecha de ida:</label>
+            <input type="date" id="fecha-ida" name="fecha-ida" required>
+            </div>
+            <div class="form-group">
+            <label for="fecha-vuelta">Fecha de vuelta:</label>
+            <input type="date" id="fecha-vuelta" name="fecha-vuelta" required>
+            </div>
+            <div class="form-group">
+            <label for="cantidad-personas">Cantidad de personas:</label>
+            <input type="number" id="cantidad-personas" name="cantidad-personas" required>
+            </div>
+            <div class="form-group">
+            <label for="destino">Destino:</label>
+            <select id="destino" name="destino">
+                <option value="">Selecciona un destino</option>
+                <optgroup label="Destinos Nacionales">
+                <option value="lima">Lima</option>
+                <option value="cusco">Cusco</option>
+                <option value="arequipa">Arequipa</option>
+                <option value="ica">Ica</option>
+                <option value="trujillo">Trujillo</option>
+                <option value="chiclayo">Chiclayo</option>
+                <option value="piura">Piura</option>
+                <option value="tarapoto">Tarapoto</option>
+                </optgroup>
+                <optgroup label="Destinos Internacionales">
+                <option value="miami">Miami</option>
+                <option value="buenos-aires">Buenos Aires</option>
+                <option value="santiago">Santiago</option>
+                <option value="cancun">Cancún</option>
+                <option value="madrid">Madrid</option>
+                <option value="paris">París</option>
+                <option value="roma">Roma</option>
+                <option value="tokyo">Tokyo</option>
+                </optgroup>
+            </select>
+            </div>
+            <button type="submit" class="search-btn">Buscar</button>
+        </form>
+        </div>
+    </div>
+    <div class="container">
+          <div class="cards">
+            <div class="card">
+                <div class="face front">
+                    <img src="img/Arequipa.jpg" alt="">
+                    <h3>Arequipa</h3>
+                </div>
+                <div class="face back">
+                    <h3>Arequipa</h3>
+                    <div class="promo-text-BS">Desde $27</div>
+                    <div class="link">
+                        <a href="#">Reserva ya</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="face front">
+                    <img src="img/buenosaires.jpg" alt="">
+                    <h3>Buenos Aires</h3>
+                </div>
+                <div class="face back">
+                    <h3>Buenos Aires</h3>
+                    <div class="promo-text-BS">Desde $239</div>
+                    <div class="link">
+                        <a href="#">Reserva ya</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="face front">
+                    <img src="img/colombia.jpg" alt="">
+                    <h3>colombia</h3>
+                </div>
+                <div class="face back">
+                    <h3>Colombia</h3>
+                    <div class="promo-text-BS">Desde $219</div>
+                    <div class="link">
+                        <a href="#">Reserva ya</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="img/cancun.jpg" alt="">
+                <h3>Cancun</h3>
+            </div>
+            <div class="face back">
+                <h3>Cancun</h3>
+                <div class="promo-text-CAN">Desde $349</div>
+                <div class="link">
+                    <a href="#">Reserva ya</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="img/cusco.jpg" alt="">
+                <h3>Cusco</h3>
+            </div>
+            <div class="face back">
+                <h3>Cusco</h3>
+                <div class="promo-text-CUS">Desde $39</div>
+                <div class="link">
+                    <a href="#">Reserva ya</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="Logo morado.png" alt="">
+                </div>
+                <div class="terms">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Futurismo</h2>
+                <a href="#">Inicio</a>
+                <a href="#">Destinos</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Nosotros</a>              
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2023 <b>Futurismo.com</b></p>
+        </div>
+    </footer>
+    </body>
+</html>
