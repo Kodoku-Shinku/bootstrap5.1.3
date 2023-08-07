@@ -3,38 +3,73 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <!-- MDB icon -->
     <link rel="icon" href="img/logo_futurismo_favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- CSS Index -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Css Index-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <head>
+        <!-- Otros elementos del head -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+
 </head>
 
 <body>
 
-    <div class="contenedor">
+    
         <!--Navbar-->
         <header>
-            <div class="logo">
-                <img src="img/logo_blanco.png" alt="logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="destinos.html">Destino</a></li>
-                    <li><a href="ofertas.html">Ofertas</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                </ul>
+            <nav class="navbar fixed-top navbar-expand-md nav-color">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/logo_blanco_2.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-bars text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <div class="col-md-4"></div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link menu-hover" aria-current="page">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-hover" href="destinos.html">Destino</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-hover" href="ofertas.html">Ofertas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-hover" href="nosotros.html">Nosotros</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex input-group w-auto">
+                            <div class="boton">
+                                <a class="shadow__btn" href="login.html" target="_blank">
+                                    Login/Registro
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </nav>
-            <div class="boton">
-                <a class="shadow__btn" href="login.html" target="_blank">
-                    Login/Registro
-                </a>
-            </div>
 
         </header>
+        <div class="contenedor">
         <div class="busqueda">
             <div>
                 <h2>Elije tu Destino</h2>
@@ -251,6 +286,15 @@
     </div>
 
     <script src="script-carrusel.js"></script>
+
+     <!-- MDB -->
+     <script type="text/javascript" src="js/mdb.min.js"></script>
+     <!-- Custom scripts -->
+     <script type="text/javascript"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+         AOS.init();
+     </script>
 </body>
 
 </html>

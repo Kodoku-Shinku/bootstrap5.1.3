@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -8,10 +8,15 @@
 body {
     font-family: 'Sulphur Point', sans-serif;
     background-color: #f6f0f0;
-    width: 100%;
-    padding: 0;
 }
-
+/*Estilos al boton*/
+button {
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: 300;
+    width: 80px;
+    height: 40px;
+    border-radius: 50%;
+}
 /*Navbar*/
 
 .nav-color {
@@ -23,10 +28,9 @@ body {
 }
 
 .menu-hover:hover {
-    color: #F3E304;
+    color: #04D9D9;
 
 }
-
 /*Navbar*/
 /*Estilos del boton de login y registro*/
 .boton {
@@ -51,6 +55,7 @@ body {
 }
 
 .shadow__btn:hover {
+    color: #ffffff;
     box-shadow: 0 0 5px #04D9D9,
         0 0 8px #04D9D9,
         0 0 10px #04D9D9,
@@ -71,9 +76,34 @@ h1 {
     color: #4e0fa6;
     font-size: 30px;
     padding-top: 5px;
+    animation: fadeInOut 3s ease-in-out infinite;
 }
 
+    @keyframes fadeInOut {
+        0% { opacity: 0; }
+        50% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+      @keyframes scrollText {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+      @keyframes mymove {
+        0%   {top: 0px; left: 0px; }
+        25%  {top: 0px; left: 100px;}
+        50%  {top: 100px; left: 100px;}
+        75%  {top: 100px; left: 0px;}
+        100% {top: 0px; left: 0px;}
+      }
 /*Cards*/
+.center-card{
+    justify-content: center;
+    align-items: center;
+}
 .place {
     font-size: 18px;
     font-family: 'Sulphur Point', sans-serif;
@@ -96,6 +126,7 @@ h1 {
     color: #F3E304;
     border-radius: 5px;
     width: 120px;
+
 }
 
 .cost {
@@ -111,10 +142,17 @@ h1 {
     background-color: #f8f3f3;
     padding: 5px;
 }
-
+.animation_img{
+    white-space: nowrap; /* Evita que la imagen se divida en varias líneas */
+    overflow: hidden; /* Oculta que la imagen se desplaza fuera del contenedor */
+    animation: scrollText 8s linear infinite; /* Velocidad de desplazamiento y repetición infinita */
+}
 img {
     position: relative;
+
+    
 }
+
 
 .card img {
     height: 162px;
@@ -123,8 +161,6 @@ img {
 .hide-overflow {
     overflow: hidden;
 }
-
-
 .caption {
     position: absolute;
     top: 130px;
@@ -134,18 +170,19 @@ img {
     left: 5px;
     z-index: 1;
     border-radius: 5px;
+
 }
 
 
 
 /*Estilos del footer*/
+
 footer {
     width: 100%;
     padding: 20px 0px;
     background-color: #04D9D9;
     background-image: url('../img/background-footer.svg');
     background-size: cover;
-
     background-color: #4E0FA6;
     -webkit-mask-image: url("../img/background-footer.svg");
     mask-image: url("../img/background-footer.svg");
@@ -156,6 +193,7 @@ footer {
 .container__footer {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
@@ -181,19 +219,21 @@ footer {
 }
 
 .box__footer h2 {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     color: #4E0FA6;
     font-weight: 700;
+    font-size: 24px;
 }
 
 .box__footer a {
-    margin-top: 10px;
+    margin-top: 5px;
     color: #04D9D9;
     font-weight: 600;
 }
 
 .box__footer a:hover {
     opacity: 0.8;
+    color:#4E0FA6 ;
 }
 
 .box__footer a .fab {
@@ -219,3 +259,62 @@ footer {
 }
 
 /*Estilos del footer*/
+
+@media (max-width: 768px) {
+    /*Media Querys del navbar*/
+    h1{
+        font-size: 20px;
+    }
+    /*Media Querys de cards */
+    .caption{
+        font-size: 12px;
+    }
+    .place{
+        font-size: 16px;
+    }
+    .date{
+        font-size: 14px;
+    }
+    .price{
+        font-size: 14px;
+        width: 100px;
+        margin-bottom: 2px;
+
+    }
+    .cost{
+        font-size: 20px;
+    }
+
+
+    /*Media Querys footer*/
+    .box__footer {
+        padding: 10px;
+    }
+    .box__footer h2 {
+        font-size: 18px;
+    }
+    .box__footer .terms {
+        font-size: 14px;
+    }
+    .box__footer .terms p {
+        margin-bottom: 0px;}
+    .box__footer a {
+        font-size: 14px;
+    } 
+    .box__copyright p {
+        font-size: 12px;
+    }
+    .box__footer .logo img {
+        width: 100px;
+        align-items:center ;
+    }
+    footer {
+        height:auto;
+    }
+}
+@media (max-width:576){
+    .container__footer .box__footer {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+}

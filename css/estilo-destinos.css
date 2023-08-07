@@ -2,7 +2,54 @@ body {
     font-family: 'Sulphur Point', sans-serif;
     background-color: #e0f2f1;
   }
-  
+  /*Navbar*/
+
+.nav-color {
+  background: #4e0fa6;
+}
+
+.menu-hover {
+  color: #ffffff;
+}
+
+.menu-hover:hover {
+  color: #F3E304;
+
+}
+
+/*Navbar*/
+/*Estilos del boton de login y registro*/
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 10px;
+}
+
+.shadow__btn {
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 8px 8px;
+  background-color: #04D9D9;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.shadow__btn {
+  background: #04D9D9;
+  box-shadow: 0 0 15px rgb(0, 140, 255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px #04D9D9,
+      0 0 8px #04D9D9,
+      0 0 10px #04D9D9,
+      0 0 15px #04D9D9;
+}
+
+
+
+
 .container {
     width: 80%;
     margin: 0 auto;
